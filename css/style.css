@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: 'Roboto', sans-serif;
+}
+ul 
+{
+    list-style: none;
+}
+a 
+{
+    text-decoration: none;
+}
+.top
+{
+    background:#FEF7F6 ;
+    line-height: 45px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.container
+{
+    max-width: 1170px;
+    margin: auto;
+}
+.flex 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.top li 
+{
+    display: inline;
+    padding: 0px 5px;
+}
+.top li a 
+{
+    color: #000;
+}
+nav button
+{
+    display: none;
+}
+nav li 
+{
+    display: inline;
+    padding: 10px;
+}
+nav li a
+{
+    color: #000;
+}
+header 
+{
+    padding: 25px 0;
+}
+.cart li 
+{
+    position: relative;
+}
+.cart li span 
+{
+    position: absolute;
+    top: -14px;
+    background: red;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 50%;
+}
+.cart li 
+{
+    display: inline;
+    padding: 0px 20px;
+}
+.banner 
+{
+    height: 512px;
+    background: url(https://softronixsolution.com/ecc/images/bg-1.jpg);
+    background-position: center;
+}
+.banner-left
+{
+    flex-basis: 600px;
+    text-align: center;
+}
+.banner-left h1
+{
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 70px;
+    margin-bottom: 45px;
+}
+.btn 
+{
+    background: #ff5353;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.banner-right
+{
+    flex-basis: 818px;
+}
+.banner-right img 
+{
+    width: 100%;
+}
+.pt-2
+{
+    padding: 25px 0;
+}
+.title 
+{
+font-size: 36px;
+text-align: center;
+text-transform: uppercase;
+margin: 20px 0;
+}
+.pcontent
+{
+    padding: 10px;
+    text-align: center;
+}
+.pbox 
+{
+    position: relative;
+}
+.hbox
+{
+    position: absolute;
+    top: 60%;
+    width: 120px;
+    height: 50px;
+    background: #fff;
+    left: 20px;
+    display: none;
+}
+.pbox:hover .hbox 
+{
+    display: block;
+}
+
+.block2 
+{
+    background: #EAE2D8;
+    height: 350px;
+}
+footer 
+{
+    background: #E9E2D8;
+    padding: 50px;
+}
+.fbox h3 
+{
+    padding-bottom: 20px;
+}
+.fbox li 
+{
+    line-height: 30px;
+}
+
+@media (max-width: 480px)
+{
+     
+.top-left{ display: none;}
+.top .flex, .banner .flex{ text-align: center; flex-direction: column;}
+nav button{ display: block;}
+nav ul{ display: none;}
+.banner{ height: auto;}
+.banner-right{order: 1; flex-basis:auto}
+.banner-left{order: 2; flex-basis:auto}
+.fbox{ flex-basis: 270px;}
+.banner-left h1{ margin-bottom: 40px;}
+.flex{  flex-wrap: wrap;}
+}
